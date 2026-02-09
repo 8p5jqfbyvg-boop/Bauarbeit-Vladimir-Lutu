@@ -136,16 +136,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    gsap.from('.service-card', {
-        scrollTrigger: {
-            trigger: '.services-grid',
-            start: 'top 75%'
-        },
-        y: 100,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.2
-    });
+    // Service cards animation removed to prevent conflict with VanillaTilt
+    // which also controls transform. Cards will be visible by default.
 
     gsap.from('.comparison-container', {
         scrollTrigger: {
@@ -289,6 +281,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-    }
-});
