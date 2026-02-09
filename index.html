@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbly Shine Auto Detailing | Pickering, ON</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;800&family=Montserrat:wght@700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Overlay -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <h1 class="glitch-text" data-text="BUBBLY SHINE">BUBBLY SHINE</h1>
+            <div class="progress-bar">
+                <div class="fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">BUBBLY <span class="text-orange">SHINE</span></a>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#credentials">Why Us</a>
+                <a href="#booking" class="btn btn-outline">Get Estimate</a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#credentials">Why Us</a>
+        <a href="#booking">Get Estimate</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" id="hero-bg">
+            <!-- Background will be handled by CSS/JS or a placeholder image -->
+        </div>
+        <div class="container hero-content">
+            <h1 class="hero-title animate-up">PREMIUM <span class="text-stroke">DETAILING</span></h1>
+            <div class="typewriter-container animate-up-delay">
+                <span id="typewriter"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-subtitle animate-up-delay-2">Professional Auto Care in Pickering, Ontario</p>
+            <div class="hero-btns animate-up-delay-3">
+                <a href="#booking" class="btn btn-primary glow-effect">Get Estimate</a>
+                <a href="#services" class="btn btn-glass">Our Services</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <h2 class="section-title text-center" data-scroll>OUR <span class="text-orange">EXPERTISE</span></h2>
+            <div class="services-grid">
+                <!-- Service 1: Ceramic -->
+                <div class="service-card" data-tilt>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fa-solid fa-droplet service-icon"></i>
+                            <h3>Ceramic Coating</h3>
+                            <p>Ultimate Paint Protection</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Ceramic Coating</h3>
+                            <ul>
+                                <li>Hydrophobic Protection</li>
+                                <li>Deep Gloss Finish</li>
+                                <li>Multi-Year Warranty</li>
+                            </ul>
+                            <button class="btn btn-sm btn-orange" onclick="selectService('ceramic')">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Window Tinting -->
+                <div class="service-card" data-tilt>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fa-solid fa-layer-group service-icon"></i>
+                            <h3>Window Tinting</h3>
+                            <div class="badge">NANO-BRITE CERTIFIED</div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Nano-Brite Tint</h3>
+                            <p class="price">$249.99 - $299.99</p>
+                            <ul>
+                                <li>Heat Rejection</li>
+                                <li>UV Protection</li>
+                                <li>Lifetime Warranty</li>
+                            </ul>
+                            <button class="btn btn-sm btn-orange" onclick="selectService('tint')">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: PPF -->
+                <div class="service-card" data-tilt>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fa-solid fa-shield-halved service-icon"></i>
+                            <h3>Paint Protection</h3>
+                            <p>Hood & Fender Defense</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>PPF Film</h3>
+                            <p class="price">$449.99 - $999.99</p>
+                            <ul>
+                                <li>Stone Chip Guard</li>
+                                <li>Self-Healing Tech</li>
+                                <li>Invisible Shield</li>
+                            </ul>
+                            <button class="btn btn-sm btn-orange" onclick="selectService('ppf')">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: Detailing -->
+                <div class="service-card" data-tilt>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fa-solid fa-car-sparkle service-icon"></i>
+                            <h3>Premium Detailing</h3>
+                            <p>Interior & Exterior</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Full Detail</h3>
+                            <ul>
+                                <li>Deep Interior Clean</li>
+                                <li>Engine Bay Detail</li>
+                                <li>Paint Correction</li>
+                            </ul>
+                            <button class="btn btn-sm btn-orange" onclick="selectService('detail')">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title text-right" data-scroll>THE <span class="text-orange">PROOF</span></h2>
+
+            <!-- Before/After Slider -->
+            <div class="comparison-container" data-scroll>
+                <div class="comparison-slider">
+                    <div class="before-image">
+                        <img src="img_bmw_dirty.png" alt="Before">
+                        <span class="label">BEFORE</span>
+                    </div>
+                    <div class="after-image">
+                        <img src="img_bmw.jpg" alt="After">
+                        <span class="label">AFTER</span>
+                    </div>
+                    <div class="scroller">
+                        <i class="fa-solid fa-arrows-left-right"></i>
+                    </div>
+                </div>
+                <!-- Note: In a real app we'd use two different images. For demo, we use CSS filters on one or placeholders -->
+            </div>
+
+            <!-- Masonry Grid -->
+            <div class="masonry-grid">
+                <div class="grid-item item-1"><img src="img_truck.jpg" alt="Truck Detailing"></div>
+                <div class="grid-item item-2"><img src="img_lexus.png" alt="Lexus"></div>
+                <div class="grid-item item-3"><img src="img_interior.png" alt="Interior Cleaning"></div>
+                <div class="grid-item item-4"><img src="img_wash.jpg" alt="Washing"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials Section -->
+    <section id="credentials" class="credentials section-padding">
+        <div class="parallax-bg"></div>
+        <div class="container relative z-10">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="counter" data-target="1000">0</span><span>+</span>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h3>Nano-Brite</h3>
+                    <p>Certified Installer</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-infinity"></i>
+                    <h3>Lifetime</h3>
+                    <p>Warranty Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking section-padding">
+        <div class="container booking-layout">
+            <div class="booking-info">
+                <h2 class="section-title">GET YOUR <br><span class="text-orange">SHINE ON</span></h2>
+                <div class="contact-details">
+                    <div class="contact-row">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>1211 Kingston Rd. Unit 10B,<br>Pickering, Ontario L1V 6M5</p>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(905) 903-9274</p>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <!-- Placeholder map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.657597282563!2d-79.08375192381284!3d43.83835697109405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4de20d88566bb%3A0x6b77259203672462!2s1211%20Kingston%20Rd%20Unit%2010B%2C%20Pickering%2C%20ON%20L1V%206M5!5e0!3m2!1sen!2sca!4v1707523200000!5m2!1sen!2sca"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="booking-form-container">
+                <form id="booking-form" class="glass-form">
+                    <h3>Price Estimator</h3>
+                    <div class="form-group">
+                        <label>Vehicle Type</label>
+                        <select id="vehicle-type" required>
+                            <option value="sedan">Sedan / Coupe</option>
+                            <option value="suv">SUV / Truck</option>
+                            <option value="luxury">Luxury / Exotic</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Service (Select all that apply)</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" value="ceramic" data-price="800"> Ceramic Coating</label>
+                            <label><input type="checkbox" value="tint" data-price="250"> Window Tinting</label>
+                            <label><input type="checkbox" value="ppf" data-price="500"> PPF</label>
+                            <label><input type="checkbox" value="detail" data-price="200"> Full Detail</label>
+                        </div>
+                    </div>
+
+                    <div class="price-estimate">
+                        <span>Est. Total:</span>
+                        <span id="total-price" class="text-orange">$0</span>
+                    </div>
+
+                    <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">*Estimate only. Contact
+                        us to book.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Bubbly Shine Auto Detailing. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/bubblyshine/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Vanilla Tilt for 3D Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
