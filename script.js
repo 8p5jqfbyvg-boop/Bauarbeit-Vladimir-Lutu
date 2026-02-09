@@ -278,4 +278,16 @@ document.addEventListener('DOMContentLoaded', () => {
             "max-glare": 0.2
         });
     }
+
+    // --- Service Card Flip (Click) ---
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+        card.addEventListener('click', () => {
+            // Toggle flip class
+            card.classList.toggle('is-flipped');
+        });
+    });
+});
+
+    }
 });
